@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Success</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f4f5fb;
+        color: #38517e;
+        padding: 20px;
+      }
+      .receipt-container {
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 350px;
+      }
+      .success-icon {
+        margin-top: 18px;
+        width: 60px;
+        height: 60px;
+      }
+      .success-message {
+        color: #38517e;
+        margin-top: 25px;
+        font-size: 15px; /* Reduced size */
+        font-weight: 600;
+      }
+      .company-name {
+        margin-top: 18px;
+        font-size: 14px; /* Reduced size */
+        font-weight: 500;
+      }
+      .separator {
+        margin: 60px; /* Adds space below the company name */
+      }
+      .details {
+        text-align: left;
+      }
+      .details p {
+        font-size: 12px; /* Reduced size */
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #d1d1d1;
+      }
+      .label {
+        font-weight: 600;
+      }
+      .image {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #e2feee; /* Light green background */
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 60px; /* Adjusted to match the existing size */
+        height: 60px; /* Adjusted to match the existing size */
+        border-radius: 9999px; /* Circular shape */
+        animation: animate 0.6s linear alternate-reverse infinite; /* Animation */
+        transition: 0.6s ease;
+      }
+
+      .image svg {
+        color: #0afa2a; /* Green color for the check mark */
+        width: 36px; /* Adjusted for the icon size */
+        height: 36px; /* Adjusted for the icon size */
+      }
+
+      @keyframes animate {
+        from {
+          transform: scale(1);
+        }
+
+        to {
+          transform: scale(1.09);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="receipt-container">
+      <div class="image">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <g id="SVGRepo_iconCarrier">
+            <path
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              stroke-width="1.5"
+              stroke="#000000"
+              d="M20 7L9.00004 18L3.99994 13"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <div class="success-message">Payment Success</div>
+      <p class="company-name">D&D IT Network and Data Solutions</p>
+
+      <div class="separator"></div>
+      <!-- Added space here -->
+
+      <div class="details">
+        <p><span class="label">Account ID:</span> <span>001100</span></p>
+        <p><span class="label">Plan:</span> <span>Plan 1400</span></p>
+        <p>
+          <span class="label">Account Name:</span> <span>Daniel Ruamar</span>
+        </p>
+        <p>
+          <span class="label">Reference Number:</span> <span>20912100000</span>
+        </p>
+        <p><span class="label">Date:</span> <span>January 05, 2025</span></p>
+        <p><span class="label">Amount:</span> <span>PHP 1,400.00</span></p>
+      </div>
+    </div>
+  </body>
+</html>
