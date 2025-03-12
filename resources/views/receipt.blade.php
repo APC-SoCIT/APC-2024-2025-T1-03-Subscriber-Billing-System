@@ -41,8 +41,8 @@
     .btnContinue{
         border: none;
         color: white;
-        background-color: #0A96C5;
-        border-radius: 15px;
+        background-color: #0AB1C5;
+        border-radius: 10px;
         padding: 5px 15px;
         width: 100%;
     }
