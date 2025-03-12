@@ -1,5 +1,5 @@
 @extends('admin.adminMain')
 
 @section('adminHome')
-<p></p>
+<p>hi</p>
 @endsection
