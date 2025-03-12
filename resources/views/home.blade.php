@@ -5,7 +5,7 @@
     <div class="topBox">
         <div class="left-content">
             <h2>Hello, {{ Session::get('user.firstName') }} {{ Session::get('user.lastName') }}!</h2>
-            <p>Welcome to D&D IT Networks, where you can explore your account, manage your subscription, view billing statements, make payments, and enjoy fast, reliable internet service with dedicated customer support.</p>
+            <p>Thank you for choosing D&D IT Networks! Explore your account, manage your subscription, and enjoy fast, reliable internet service.</p>
         </div>
         <div class="right-content">
             <img src="storage/Images/dd.png" alt="D&D Logo">
