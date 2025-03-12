@@ -96,7 +96,7 @@ $subscriptionId = request()->id; // Get subscription ID from URL
     }
 
     .amount-box {
-        background: #FFFFFF;
+        background: #F0F4FF;
         padding: 15px;
         border-radius: 8px;
         margin: 10px 0;
