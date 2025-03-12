@@ -50,8 +50,8 @@
 
 
         .custom-column {
-            flex: 0 0 20%;
-            max-width: 20%;
+            flex: 0 0 30%;
+            max-width: 30%;
         }
     }
 
@@ -64,3 +64,4 @@
     }
 </style>
 @endsection
+
