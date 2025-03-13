@@ -1,5 +1,5 @@
 @extends('admin.adminMain')
-//Hasheem Ditano
+
 @section('adminUsers')
 <div class="container">
     <div class="row mt-5">
@@ -96,7 +96,7 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="addProductModalLabel">Add Product</h5>
+                        <h5 class="modal-title" id="addProductModalLabel">Add New User</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -150,7 +150,7 @@
                                 </div>
 
                                 <div class="col-8">
-                                    <input class="form-control mb-2" type="text" name="sAddr" placeholder="Street Address" aria-label="default input example">
+                                    <input class="form-control mb-2" type="text" name="sAddr" placeholder="Unit/Street/Barangay/Subdivision" aria-label="default input example">
                                 </div>
                             </div>
 
@@ -170,7 +170,8 @@
 
                                 <div class="col-4">
                                     <select class="form-select" name="userType">
-                                        <option selected value="User">User</option>
+                                        <option selected>Role</option>
+                                        <option value="User">User</option>
                                         <option value="Admin">Admin</option>
                                     </select>
                                 </div>
@@ -243,7 +244,7 @@
                                     <input type="date" class="form-control" value="{{$user->birthday}}" name="bday" required>
                                 </div>
                                 <div class="col-8">
-                                    <input class="form-control mb-2" type="text" name="sAddr" value="{{$user->streetAddr ?? ''}}" placeholder="Street Address">
+                                    <input class="form-control mb-2" type="text" name="sAddr" value="{{$user->streetAddr ?? ''}}" placeholder="Unit/Street/Barangay/Subdivision">
                                 </div>
                             </div>
 
